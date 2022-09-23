@@ -7,7 +7,7 @@
 % We Seperate the script into four different sections. 
 % SETUP, CALCULATE, ARRANGE AND PRESENT.
 
-% SETUP
+% SETUP 
 % This section will prepare different arrays, variables and contrains to be
 % used throughout the script 
 
@@ -29,10 +29,10 @@
 % then you write the first letter found in each of those defined groups. 
 % in this case our Adult datasets starts with a "D" and our Young
 % dataset starts with a "y"
-filepath= 'C:\Users\tvh307\OneDrive - University of Copenhagen\Documents\MovementNeuroscience\ReScale\ReScaleEEGData'; % put your filepath
+filepath = 'I:\SCIENCE-NEXS-neurolab\PROJECTS\ReScale\KAA'; 
 files = dir(fullfile(filepath, '*.set'));
 
-EEGLabPath = 'C:\eeglab2022.0'; % change the filepath for your eeglab
+EEGLabPath= 'C:\Users\dzn332\OneDrive - University of Copenhagen\Documents\MATLAB\eeglab2022.1\'; 
 electrodes = FindNumberOfElectrodes(files, filepath, EEGLabPath); 
 maxNumberOfConditions = FindMaxNumberOfConditions(files, filepath, EEGLabPath); 
 NumberOfFiles = size(files,1);
